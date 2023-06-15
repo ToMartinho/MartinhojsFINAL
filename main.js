@@ -13,7 +13,31 @@ class Reserva{
 }
 /* ----------------------------------------------------  FIN CLASES  -----------------------------------------------*/ 
 
-/* ----------------------------------------------------  FUNCIONES  ------------------------------------------------*/  
+/* ----------------------------------------------------  FUNCIONES  ------------------------------------------------*/ 
+// se crea funcion para taer el clima del archivo json
+const traerClima = async () =>{
+    const res = await fetch("./climas.json");
+    const climas = await res.json();
+    climas.forEach(clima =>{
+        verClima(clima);
+    })
+}
+
+const verClima = ({dia,temperatura,humedad,estado,lluvias}) =>{
+    const contenedorClima = document.querySelector("#contenedorClima");
+    const tarjetaClima = document.createElement("div");
+    tarjetaClima.className ="tarjetaClima";
+    tarjetaClima.innerHTML =`
+                        <div class="contenido">
+                            <span><b>dia:</b> ${dia}</span><br>
+                            <span><b>temperatura:</b> ${temperatura}°C</span><br>
+                            <span><b>humedad:</b> ${humedad}%</span><br>
+                            <span><b>estado del clima:</b> ${estado}</span><br>
+                            <span><b>porobabillidad de lluvias:</b> ${lluvias}%</span>
+                        </div>
+                        `
+    contenedorClima.append(tarjetaClima);
+} 
 // se crea funcion para crear reservas
 const crearReserva = () =>{
     const crearReserva = document.querySelector("#crearReserva")
@@ -127,10 +151,11 @@ let disponible = true;
 /*--------------------------------------------------    MAIN   ---------------------------------------------------- */
 
 // llamamos a los metodos
-
+traerClima();
 verReservas();
 crearReserva();
 cancelarReserva();
+
 
 
 /*--------------------------------------------------   FIN MAIN   ---------------------------------------------------- */

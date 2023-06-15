@@ -17,7 +17,7 @@
 }
 
 .formulario input{
-    width: 250px;
+    width: 285px;
 }
 
 .formulario input, .formulario textarea{
@@ -55,4 +55,150 @@
 .tabla th, .tabla td{
     border: 1px solid;
     padding: 10px;
+}
+/* FORMATO TARJETAS DE CLIMA */
+.divclima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contenedorClima{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 12px;
+}
+.tarjetaClima{
+    background-color: rgb(5, 185, 125);
+    border-radius: 5px;
+    color: white;
+    width: 250px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* CSS FUSION CON TP DESARROLLO WEB */
+
+/* BOTON CALL TO ACTION */
+.action{
+    margin: auto;
+    margin-top: 25px;
+    width: 95%;
+}
+
+.reserva{
+    padding: 25px 20px;
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+/* TITULO */
+.titulo{
+    text-align: center;
+    font-weight: 600;
+}
+
+/* CARRUSEL INDEX */
+.carrusel{
+    margin: auto;
+    margin-top: 10px;
+    /* margin-left: 5px; */
+    width: 95%;
+}
+.padreCarrusel{
+    position: relative;
+    height: 70vh;
+}
+
+.fotoCarrusel{
+    position: absolute;
+}
+
+/* BODY GENERAL */
+body{
+    background-color: azure;
+}
+
+/* NAV BAR */
+
+.barra{
+    background-color: azure;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.logo{
+    border-radius: 5px;
+    width: 90px;
+}
+
+/* INSTALACIONES */
+.separacion{
+    margin-left: 15px;
+}
+
+/* TORNEOS */
+.construccion{
+    display: flex;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 1%;
+    font-weight: bold;
+    background-color: #198754;
+}
+
+/* FORMULARIO DE RESERVA */
+
+form{
+    margin-left: 15px;
+}
+
+
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width: 576px) {
+    .padreCarrusel{
+        position: relative;
+        height: 30vh;
+    }
+    .construccion{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .padreCarrusel{
+        position: relative;
+        height: 35vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .padreCarrusel{
+        position: relative;
+        height: 30vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+	.padreCarrusel{
+        position: relative;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+	
+} 
+
+@media only screen and (min-width: 1400px) {
+	.padreCarrusel{
+        position: relative;
+        height: 70vh;
+    }
 }

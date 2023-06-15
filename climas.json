@@ -1,0 +1,51 @@
+[
+    {
+    "dia": "Lunes",
+    "temperatura": 15,
+    "humedad": 82,
+    "estado": "soleado",
+    "lluvias": 0
+    },
+    {
+    "dia": "Martes",
+    "temperatura": 12,
+    "humedad": 80,
+    "estado": "despejado",
+    "lluvias": 0
+    },
+    {
+    "dia": "Miércoles",
+    "temperatura": 16,
+    "humedad": 83,
+    "estado": "nublado",
+    "lluvias": 50
+    },
+    {
+    "dia": "Jueves",
+    "temperatura": 18,
+    "humedad": 81,
+    "estado": "lluvioso",
+    "lluvias": 87
+    },
+    {
+    "dia": "Viernes",
+    "temperatura": 11,
+    "humedad": 85,
+    "estado": "parcialmente nublado",
+    "lluvias": 75
+    },
+    {
+    "dia": "Sábado",
+    "temperatura": 14,
+    "humedad": 79,
+    "estado": "despejado",
+    "lluvias": 0
+    },
+    {
+    "dia": "Domingo",
+    "temperatura": 17,
+    "humedad": 84,
+    "estado": "nublado",
+    "lluvias": 30
+    }
+]

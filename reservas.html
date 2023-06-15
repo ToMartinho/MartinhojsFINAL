@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ETIQUETA META DESCRIPTION -->
+    <meta name="description" content="En Florida Futbol 5 podes realizar la reserva de manera agil a traves de nuestro nuevo sistema sin la necesidad de acercarse a dejar una seña. Ahora todo es mucho mas rapido, ¿que estas esperando?">
+    <!-- CSS BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>RESERVAS</title>
+</head>
+<body>
+    <!-- INICIO NAV BAR -->
+    <nav class="navbar navbar-expand-lg barra">
+        <div class="container-fluid">
+            <img class="logo" src="img/FF5-Logo.png" alt="FF5LOGO">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservas.html">Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="instalaciones.html">Instalaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="torneos.html">Torneos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN NAV BAR -->
+    <div class="separacion">
+        <h1> Reservas </h1>
+        <p>En Florida Futbol 5 podes reservar en 6 simples pasos</p>
+        <ol>
+            <li>Completa el formulario</li>
+            <li>Revisa tu email para confirmar la reserva</li>
+            <li>En el email vas a encontrar el link de mercado pago para dejarnos la reserva</li>
+            <li>Adjunta al email el comprobante de pago de la reserva y enviala</li>
+            <li>Recibi la confirmacion de la reserva</li>
+            <li>Veni a disfutar</li>
+        </ol>
+        <p><strong>ADVERTENCIA:</strong> no te olvides de revisar el email y adjuntar el recibo y/o comprobante de la reserva,
+            de no ser adjuntado la reserva no sera tomada.
+            <br>
+            Una vez que recibe el email tiene un plazo de 20 minutos para enviar el recibo o comprobante.
+            <br>
+            De no ser completada la reserva te llegara un email notificandote y deberas volver a cargar la reserva siguiendo los pasos anteriores.
+        </p>
+        <hr>
+
+
+    </div>
+
+    <main>
+        <form id="crearReserva" class="formulario">
+            <h2>FORMULARIO DE RESERVA</h2>
+            <textarea type="text" name="nombre" placeholder="ingrese su nombre para la reserva" required></textarea>
+            <textarea type="text" name="apellido" placeholder="ingrese su apellido para la reserva" required></textarea>
+
+            <input type="number" name="dni" min="0" max="99999999" placeholder="ingrese su dni" required>
+
+            <select name="cancha" required>
+                <option value="techada">Techada</option>
+                <option value="descubierta">descubierta</option>               
+            </select>
+
+            <select name="dia" required>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sabado</option>
+                <option value="domingo">Domingo</option>               
+            </select>
+           
+            <select name="horario" required>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option> 
+                <option value="18">18</option> 
+                <option value="19">19</option> 
+                <option value="20">20</option> 
+                <option value="21">21</option> 
+                <option value="22">22</option> 
+                <option value="23">23</option>                
+            </select>
+            <button type="submit">Solicitar Reserva</button>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <div class="divclima">
+            <h3><b>Clima Semanal</b></h3>
+            <p>Antes de reservar no te olvides de chequear el clima de la semana para saber cuando y que cancha reservar</p>
+        </div>
+        
+        <div id="contenedorClima">
+
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <form id="eliminarReserva" class="formulario">
+            <h2>FORMULARIO DE CANCELACION</h2>
+            <input type="number" name="dni" min="0" max="99999999" placeholder="ingrese su dni para cancelar la reserva" required>
+            <button type="submit">Cancelar Reserva</button>
+        </form>
+        <br>
+        <hr>
+        <br>
+
+        <table id="tablaReservas" class="tabla">
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>dni</th>
+                <th>cancha</th>
+                <th>dia</th>
+                <th>horario</th>
+            </tr>
+        </table>
+    </main>
+
+     <!-- FOOTER -->
+     <footer class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-12 text-center text-lg-start col-lg-9 order-last order-lg-first">FF5 - &copy;2023. Derechos
+                reservados</div>
+            <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="img/instagram-b.png" alt="instagram" width="30">
+                </a>
+            </div>
+            <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="img/youtube-b.png" alt="youtube" width="30">
+                </a>
+            </div>
+            <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="img/twitter-b.png" alt="twitter" width="30">
+                </a>
+            </div>
+            <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/facebook-b.png" alt="facebook" width="30">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <!-- SCRIPT BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    
+    <!-- LIBRERIA SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- MI SCRIP JS -->
+    <script src="./main.js"></script>
+</body>
+</html>

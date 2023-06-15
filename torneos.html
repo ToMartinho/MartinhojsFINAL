@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ETIQUETA META DESCRIPTION -->
-    <meta name="description" content="Las canchitas de tu barrio nunca estuvieron mas al alcanze que ahora. Reserva tu canchita de manera agil y rapida y venite a pasar un buen momento con tus amigos en Florida Futbol 5">
+    <meta name="description" content="Junta tu equipo de 5 o de 7 y venite a vivir una nueva experiencia con nosotros. La gloria y los premios te esperan en Florida Futbol 5">
     <!-- CSS BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Florida Futbol 5</title>
+    <title>Torneos | Florida Futbol 5</title>
 </head>
 
 <body>
@@ -27,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservas.html">Reservas</a>
@@ -39,45 +41,25 @@
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="torneos.html">Torneos</a>
+                        <a class="nav-link active" href="torneos.html">Torneos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- FIN NAV BAR -->
-    <!-- H1 -->
-    <div class="titulo">
-        <h1>FLORIDA FUTBOL 5</h1>
-        <p>Disfruta de nuestras canchas e instalaciones, reservar nunca fue mas facil.</p>
+    <div class="separacion, titulo" data-aos="flip-down" data-aos-duration="800">
+        <h1>Torneos proximamente</h1>
+        <p>Proximamente en Florida futbol 5, te podras anotar con tu dream team de 5 o 7 jugadores, competir en torenos de 4 fechas, por la gloria eterna</p>
     </div>
-    <!-- FIN H1 -->
-
-    <!-- BOTON CALL TO ACTION -->
-    <div class="d-grid gap-2 col-6 mx-l action">
-        <a class="btn btn-success reserva" href="reservas.html" role="button">RESERVA TU CANCHA</a>
-    </div>
-    <!-- FIN BOTON CALL TO ACTION -->
-    <!-- CARRUSEL DE IMG DE CANCHAS -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide carrusel" data-bs-ride="carousel">
-        <div class="carousel-inner padreCarrusel">
-            <div class="carousel-item fotoCarrusel active">
-                <img src="img/cancha1.jpg" class="d-block w-100" alt="CANCHA1">
-            </div>
-            <div class="carousel-item fotoCarrusel">
-                <img src="img/cancha2.jpg" class="d-block w-100" alt="CANCHA2">
-            </div>
-            <div class="carousel-item fotoCarrusel">
-                <img src="img/cancha3.jpg" class="d-block w-100" alt="CANCHA3">
-            </div>
-        </div>
-    </div>
-    <!-- FIN DEL CARRUSEL -->
-
+    
+    <img data-aos="flip-up" data-aos-duration="1000" class="construccion" src="img/Llaves de torneo.png" alt="Llaves Torneo">
+    
     <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-12 text-center text-lg-start col-lg-9 order-last order-lg-first">FF5 - &copy;2023. Derechos reservados</div>
+            <div class="col-12 text-center text-lg-start col-lg-9 order-last order-lg-first">FF5 - &copy;2023. Derechos
+                reservados</div>
             <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
                 <a href="https://www.instagram.com/" target="_blank">
                     <img src="img/instagram-b.png" alt="instagram" width="30">
@@ -101,7 +83,13 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
-   
+
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INIT AOS -->
+    <script>
+        AOS.init();
+    </script>
     <!-- SCRIPT BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

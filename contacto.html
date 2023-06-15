@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ETIQUETA META DESCRIPTION -->
-    <meta name="description" content="Las canchitas de tu barrio nunca estuvieron mas al alcanze que ahora. Reserva tu canchita de manera agil y rapida y venite a pasar un buen momento con tus amigos en Florida Futbol 5">
+    <meta name="description" content="En Florida Futbol 5 nos podes dejar tu consulta sobre cualquier duda que tengas y sera atendida de una forma personalizada">
     <!-- CSS BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Florida Futbol 5</title>
+    <title>Contacto | Florida Futbol 5</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reservas.html">Reservas</a>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="instalaciones.html">Instalaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="torneos.html">Torneos</a>
@@ -46,38 +46,41 @@
         </div>
     </nav>
     <!-- FIN NAV BAR -->
-    <!-- H1 -->
-    <div class="titulo">
-        <h1>FLORIDA FUTBOL 5</h1>
-        <p>Disfruta de nuestras canchas e instalaciones, reservar nunca fue mas facil.</p>
-    </div>
-    <!-- FIN H1 -->
 
-    <!-- BOTON CALL TO ACTION -->
-    <div class="d-grid gap-2 col-6 mx-l action">
-        <a class="btn btn-success reserva" href="reservas.html" role="button">RESERVA TU CANCHA</a>
-    </div>
-    <!-- FIN BOTON CALL TO ACTION -->
-    <!-- CARRUSEL DE IMG DE CANCHAS -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide carrusel" data-bs-ride="carousel">
-        <div class="carousel-inner padreCarrusel">
-            <div class="carousel-item fotoCarrusel active">
-                <img src="img/cancha1.jpg" class="d-block w-100" alt="CANCHA1">
-            </div>
-            <div class="carousel-item fotoCarrusel">
-                <img src="img/cancha2.jpg" class="d-block w-100" alt="CANCHA2">
-            </div>
-            <div class="carousel-item fotoCarrusel">
-                <img src="img/cancha3.jpg" class="d-block w-100" alt="CANCHA3">
-            </div>
+    <!-- FORMULARIO DE CONTACTO -->
+    <form>
+        <h1>Envianos tu consulta a traves del formulario</h1>
+        <div class="mb-3, col-5">
+            <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
         </div>
+        <div class="mb-3 col-6">
+            <label for="exampleFormControlTextarea1" class="form-label">Tu consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+    <!-- FIN FORMULARIO DE CONTACTO -->
+    <!-- LISTA DE CONTACTOS -->
+    <div class="separacion">
+        <h2>Telefonos de contacto</h2>
+        <ul>
+            <li>Telefono Fijo: 4123 - 4321</li>
+            <li>Celular o Whatsapp: 15-1234-4321</li>
+        </ul>
+        <h4>Donde nos encontramos?</h4>
+        <ul>
+            <li>Estamos ubciados en: Vicente Lopez - Calle falsa 4321</li>
+        </ul>
+        <h3>te dejamos un mapa para que te sea mas facil encontrarnos:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.562170567392!2d-58.51466688425463!3d-34.53931906160168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb72bbf4a8bb9%3A0x93ec9dbb415ebeef!2sFlorida%20Club!5e0!3m2!1ses-419!2sar!4v1678212838577!5m2!1ses-419!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- FIN DEL CARRUSEL -->
 
     <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-12 text-center text-lg-start col-lg-9 order-last order-lg-first">FF5 - &copy;2023. Derechos reservados</div>
+            <div class="col-12 text-center text-lg-start col-lg-9 order-last order-lg-first">FF5 - &copy;2023. Derechos
+                reservados</div>
             <div class="col-6 py-3 col-lg text-center text-lg-end order-first order-lg-last">
                 <a href="https://www.instagram.com/" target="_blank">
                     <img src="img/instagram-b.png" alt="instagram" width="30">
@@ -101,7 +104,8 @@
         </div>
     </footer>
     <!-- FIN FOOTER -->
-   
+
+
     <!-- SCRIPT BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
