@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>RESERVAS</title>
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <form id="crearReserva" class="formulario">
+            <h2>FORMULARIO DE RESERVA</h2>
+            <textarea type="text" name="nombre" placeholder="ingrese su nombre para la reserva" required></textarea>
+            <textarea type="text" name="apellido" placeholder="ingrese su apellido para la reserva" required></textarea>
+
+            <input type="number" name="dni" min="0" max="99999999" placeholder="ingrese su dni" required>
+
+            <select name="cancha" required>
+                <option value="techada">Techada</option>
+                <option value="descubierta">descubierta</option>               
+            </select>
+
+            <select name="dia" required>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sabado</option>
+                <option value="domingo">Domingo</option>               
+            </select>
+           
+            <select name="horario" required>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option> 
+                <option value="18">18</option> 
+                <option value="19">19</option> 
+                <option value="20">20</option> 
+                <option value="21">21</option> 
+                <option value="22">22</option> 
+                <option value="23">23</option>                
+            </select>
+            <button type="submit">Solicitar Reserva</button>
+        </form>
+        <br>
+        <hr>
+        <br>
+        <form id="eliminarReserva" class="formulario">
+            <h2>FORMULARIO DE CANCELACION</h2>
+            <input type="number" name="dni" min="0" max="99999999" placeholder="ingrese su dni para cancelar la reserva" required>
+            <button type="submit">Cancelar Reserva</button>
+        </form>
+        <br>
+        <hr>
+        <br>
+
+        <table id="tablaReservas" class="tabla">
+            <tr>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>dni</th>
+                <th>cancha</th>
+                <th>dia</th>
+                <th>horario</th>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <!-- LIBRERIA SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- MI SCRIP JS -->
+    <script src="./main.js"></script>
+</body>
+</html>
